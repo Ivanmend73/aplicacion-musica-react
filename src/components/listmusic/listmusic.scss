@@ -1,0 +1,63 @@
+.container_listmusic {
+    width: 100%;
+    position: relative; 
+    cursor: pointer;
+    
+    img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .list_play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%,-100%);
+        color: #fff;
+        font-size: 2rem;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    .content_info_music {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:  0 10px;
+
+        .main_info_music {
+            font-family: "Quicksand",sans-serif;
+
+            h5{
+                margin: 0;
+                padding: 0;
+                font-size: 0.8rem;
+            }
+            p{
+                margin: 0;
+                padding: 0;
+                color: #444;
+                font-size: 0.9rem;
+            }
+        }
+        .content_like {
+
+
+            i{
+                cursor: pointer;
+                transition: all 0.3s ;
+                font-size: 1.3rem;
+                animation: heartbeat 1s ;
+
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+

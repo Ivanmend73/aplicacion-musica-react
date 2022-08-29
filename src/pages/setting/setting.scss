@@ -1,0 +1,75 @@
+.img_setting {
+    width: 200px;
+}
+
+input {
+    padding: 0;
+    padding: 4px;
+    font-size: 0.9rem;
+    color: #777;
+    border: none;
+    border-bottom: 1px solid black;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+label {
+    font-size: 1rem;
+}
+
+.setting {
+
+
+    .content_setting {
+
+
+
+        .setting_tittle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 400;
+            padding: 10px 30px;
+
+            .update_span {
+                color: lightblue;
+                font-weight: 500;
+                font-size: 1.5rem;
+            }
+            .delete_span {
+                color: red
+            }
+        }
+
+        .form_setting {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+
+
+            .setting_button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                button {
+                    font-weight: 500;
+                    padding: 9px 15px;
+                    background-color: rgb(254, 93, 93);
+                    color: white;
+                    border-radius: 17px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

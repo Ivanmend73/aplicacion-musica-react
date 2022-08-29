@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React,{ useContext } from 'react';
 import './App.css';
+import Login from './pages/login/Login';
+import MainPage from './pages/mainpage/MainPage';
+import Setting from './pages/setting/Setting';
+import Register from './pages/register/Register';
+//react-router-dom
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Context } from './context/context';
+import Audio from "../src/components/audio/Audio"
 
 function App() {
+  const { user } = useContext(Context);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage/>}/>
+          <Route path="/login" element={user ?<MainPage/> :<Login/> }/>
+          <Route path="/register" element={user ? <MainPage/> : <Register/>}/>
+          <Route path='/settings' element={user ? <Setting/> :<Setting/>} />
+          <Route path="/audio" element={<Audio/>}/>
+        </Routes>
+      </BrowserRouter>
+
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.container-mainPage {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+
+    .container_main {
+        width: 100%;
+        
+    }
+
+}
+
+
+@media screen and (max-width: 960px) {
+    .container-mainPage {
+        background-color: red;
+        display: block;
+        width:  100%;
+        justify-content: center;
+    }
+
+}

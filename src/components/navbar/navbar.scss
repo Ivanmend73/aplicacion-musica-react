@@ -1,0 +1,124 @@
+.music_like {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        font-size: 1rem;
+    }
+
+    .cant_like {
+        position: absolute;
+        top: -90%;
+        left: 90%;
+        background-color: red;
+        border-radius: 50%;
+        height: 18px;
+        width: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 0.8rem;
+    }
+}
+
+.content_perfil {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+p{
+    color:#828282;
+};
+
+.container-navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 23px;
+    height: 50px;
+
+    /*  input*/
+    .navbar_search {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        border: 1px solid gray;
+        padding: 0px 10px;
+        border-radius: 16px;        
+        height: 34px;
+    
+
+        .search_music {
+            width: 300px;
+            display: flex;
+            align-items: center;
+            padding: 2px;
+            border-radius: 5px;
+            font-size: 0.8rem;        
+            margin-top: 19px;
+            border: none;
+            &:focus {
+                outline: none;
+            }
+        }
+
+        span {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+
+
+            i{
+                color: gray;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        .user-icon {
+
+
+            i{
+                color: #e86060;
+            }
+        }
+    }
+
+    .user-icon {
+        margin-right: 10px
+    };
+    .bar-icon {
+        display: none;
+    }
+
+    @media screen and (max-width: 960px) {
+        background-color: green;
+        width: 100%;
+
+        .user-name {
+            display: none;
+        }
+        .bar-icon {
+            display: block;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: all 0.6s;
+
+            &:hover {
+                color: #444
+            }
+        }
+    }
+}

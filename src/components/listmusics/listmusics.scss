@@ -1,0 +1,9 @@
+.container_listmusics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 150px;
+}
+

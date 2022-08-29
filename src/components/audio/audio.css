@@ -1,0 +1,17 @@
+.audio_container {
+    font-family: sans-serif;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: -2%;
+    background-color: #e86060;
+    height: 200px;
+    padding: 0; 
+
+
+}
+
+.audioPlayer {
+  background-color: green;
+}
+  
